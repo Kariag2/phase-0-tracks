@@ -1,0 +1,24 @@
+Robot using and elevator:
+
+- Go into building.
+- Find lighted up and down arrows that are next to sliding doors.
+- Decide if you need to go up or down to get to the location you are trying to go.
+- Lift hand and finger to press the arrow that represents which direction
+  you need to go.
+- When doors open walk into elevator.
+- Turn to find lighted key pad on the inside of the elevator.
+- Lift hand and finger and push the number that corresponds
+  to the floor you need to go to.
+- The doors will close and the elevator will move in the direction you told it to go.
+- When the elevator has stopped moving, the doors will open.
+- Exit the elevator by walking out through the sliding doors you walked in through.
+
+
+Brushing my teeth:
+
+- Open cabinet where toothbrush is.
+- Take toothbrush out of its container.
+- Put toothbrush under running water to wet it.
+- Get toothpaste out of cabinet.
+- Take top off of toothpaste a squeeze a little paste onto brush
+- Put brush with paste to your teeth and move up and down and side to side.
