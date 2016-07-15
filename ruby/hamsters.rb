@@ -8,10 +8,14 @@ puts "What color fur does the hamster have?"
   fur_color = gets.chomp
 
 puts "Do you believe the hamster is a good candidate for adoption? Please answer yes or no."
-  adopt_canditate = gets.chomp.to_b
+  adopt_canditate = gets.chomp
 
-puts "What is the hamsters estimated age?"
-  estimated_age = nil
+puts "Do you know the hamsters estimated age?"
+  estimated_age = gets.chomp
+  if estimated_age == ""
+     estimated_age = nil
+  end
+
 
 puts "The hamsters name is #{hamsters_name}."
 puts "The hamster can get to a volume level of about #{volume_level}."
