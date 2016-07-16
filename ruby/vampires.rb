@@ -12,3 +12,10 @@ garlic_bread = gets.chomp
 
 puts "Would you like to enroll in the company's health insurance?"
 health_insurance = gets.chomp
+
+current_year = 2016
+if current_year - year_born = age
+  age == true
+else
+  age == false
+end
