@@ -2,7 +2,7 @@ puts "What is your name?"
 name = gets.chomp
 
 puts "How old are you?"
-employee_age = gets.chomp.to_i
+age = gets.chomp.to_i
 
 puts "What year were you born"
 year_born = gets.chomp.to_i
@@ -15,23 +15,23 @@ health_insurance = gets.chomp
 
 current_year = 2016.to_i
 # If current year minus year born is equal to employee_age then correct_age is true
-if employee_age == current_year - year_born
-  correct_age = true
+if age == current_year - year_born
+  employee_age = true
 else
-  correct_age = false
+  employee_age = false
 end
-p correct_age
+# p employee_age
 # If garlic bread is equal to yes then garlic_bread will be true
 if garlic_bread == "yes"
   garlic_bread = true
 else
   garlic_bread = false
 end
-#p garlic_bread
+# p garlic_bread
 # Conditional statement for insurance plan
 if health_insurance == "yes"
   health_insurance = true
 else
   health_insurance = false
 end
-p health_insurance
+# p health_insurance
