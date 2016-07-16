@@ -35,3 +35,8 @@ else
   health_insurance = false
 end
 # p health_insurance
+# Conditional statement with employee age & garlic bread & insurance plan
+# to update variable as each condition is checked
+if employee_age && (garlic_bread && health_insurance)
+  puts "Probably not a vampire"
+end
