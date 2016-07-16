@@ -15,7 +15,7 @@ health_insurance = gets.chomp
 
 current_year = 2016
 if current_year - year_born = age
-  age == true
+  age == "true"
 else
-  age == false
+  age == "false"
 end
