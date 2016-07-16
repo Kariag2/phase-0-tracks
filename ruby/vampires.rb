@@ -2,7 +2,7 @@ puts "What is your name?"
 name = gets.chomp
 
 puts "How old are you?"
-age = gets.chomp.to_i
+employee_age = gets.chomp.to_i
 
 puts "What year were you born"
 year_born = gets.chomp.to_i
@@ -14,8 +14,15 @@ puts "Would you like to enroll in the company's health insurance?"
 health_insurance = gets.chomp
 
 current_year = 2016
-if current_year - year_born = age
-  age == "true"
+if current_year - year_born = employee_age
+  employee_age == true
 else
-  age == "false"
+  employee_age == false
 end
+p employee_age
+if garlic_bread == "yes"
+  garlic_bread == true
+else
+  garlic_bread == false
+end
+p garlic_bread
