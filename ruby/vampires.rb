@@ -10,7 +10,7 @@ year_born = gets.chomp.to_i
 puts "Our company cafeteria serves garlic bread, should we order some for you?(yes/no)"
 garlic_bread = gets.chomp
 
-puts "Would you like to enroll in the company's health insurance?"
+puts "Would you like to enroll in the company's health insurance plan?"
 health_insurance = gets.chomp
 
 current_year = 2016.to_i
@@ -28,3 +28,10 @@ else
   garlic_bread = false
 end
 #p garlic_bread
+# Conditional statement for insurance plan
+if health_insurance == "yes"
+  health_insurance = true
+else
+  health_insurance = false
+end
+p health_insurance
