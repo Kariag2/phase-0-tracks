@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 puts "How many employees will be processed today?"
 processed_today = gets.chomp.to_i
 employees_processed = 0.to_i
