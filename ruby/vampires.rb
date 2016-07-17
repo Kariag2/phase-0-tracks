@@ -66,7 +66,7 @@ end
 
 loop do
   puts "Please list any allergies. Type 'done' when you are finished."
-  allergy = gets.chomp
+  allergy = gets.chomp.downcase
   if allergy == 'sunshine'
     results = "Probably a vampire"
     break
@@ -85,7 +85,6 @@ end
   # puts age
   # puts employee_age
   # puts garlic_bread
-  # puts health_insurance
   # puts results
 end
 # Add a line at the very end of your program that prints, "Actually, never mind!
