@@ -38,6 +38,8 @@ end
 # Conditional statement with employee age, garlic bread & insurance plan
 # to update variable as each condition is checked
 # Add results variable
+
+
 results = "Results inconclusive"
 if employee_age && (garlic_bread && health_insurance)
   results = "Probably not a vampire"
@@ -46,7 +48,6 @@ elsif employee_age && (!garlic_bread || !health_insurance)
 else !employee_age && (!garlic_bread && !health_insurance)
   results = "Almost certainly a vampire!"
 end
-p results
 
 bad_name1 = "Drake Cula"
 bad_name2 = "Tu Fang"
