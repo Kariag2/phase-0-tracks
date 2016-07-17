@@ -59,4 +59,10 @@ while employees_processed < processed_today
     results = "Definitley a vampire!"
   end
   employees_processed += 1
+  puts name
+  puts age
+  puts employee_age
+  puts garlic_bread
+  puts health_insurance
+  puts results
 end
