@@ -55,9 +55,28 @@ while employees_processed < processed_today
   bad_name1 = "Drake Cula"
   bad_name2 = "Tu Fang"
 
-  if name = bad_name1 || bad_name2
+  if name == bad_name1 || bad_name2
     results = "Definitley a vampire!"
   end
+
+#   use a loop to ask the employee to name any allergies,
+#   one at a time. The employee can type “done” when finished.
+
+loop do
+  puts "Please list any allergies. Type 'done' when you are finished."
+  allergy = gets.chomp
+  if allergy == 'sunshine'
+    result = "Probably a vampire"
+  else allergy = 'done'
+    break
+  end
+end
+
+# As long as the allergy is not “sunshine,”
+# continue the loop for as long as is needed.
+# If at any point the employee lists “sunshine” as an allergy,
+# skip directly to the result of “Probably a vampire.”
+
   employees_processed += 1
   puts name
   puts age
