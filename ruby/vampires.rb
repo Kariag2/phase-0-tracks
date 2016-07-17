@@ -47,3 +47,10 @@ else !employee_age && (!garlic_bread && !health_insurance)
   results = "Almost certainly a vampire!"
 end
 p results
+
+bad_name1 = "Drake Cula"
+bad_name2 = "Tu Fang"
+
+if name == bad_name1 || bad_name2
+  results = "Definitley a vampire!"
+end
