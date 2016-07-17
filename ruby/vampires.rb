@@ -37,10 +37,13 @@ end
 # p health_insurance
 # Conditional statement with employee age, garlic bread & insurance plan
 # to update variable as each condition is checked
+# Add results variable
+results = "Results inconclusive"
 if employee_age && (garlic_bread && health_insurance)
-  puts "Probably not a vampire"
-elsif !employee_age && (!garlic_bread || !health_insurance)
-  puts "Probably a vampire"
+  results = "Probably not a vampire"
+elsif employee_age && (!garlic_bread || !health_insurance)
+  results = "Probably a vampire"
 else !employee_age && (!garlic_bread && !health_insurance)
-  puts "Almost certainly a vampire!"
+  results = "Almost certainly a vampire!"
 end
+p results
