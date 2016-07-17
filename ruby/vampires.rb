@@ -74,12 +74,10 @@ loop do
     break
   end
 end
-
 # As long as the allergy is not “sunshine,”
 # continue the loop for as long as is needed.
 # If at any point the employee lists “sunshine” as an allergy,
 # skip directly to the result of “Probably a vampire.”
-
   employees_processed += 1
   # puts name
   # puts age
