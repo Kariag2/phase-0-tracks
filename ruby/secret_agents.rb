@@ -31,3 +31,14 @@ Write a decrypt method that undoes the encrypt method
 Moves every letter of a string back one letter
 Spaces remain spaces
 =end
+def decrypt(encrypt_letter)
+  alphabet = "abcdefghijklmnopqrstuvwxyz"
+  decrypt_letter = ""
+  index = 0
+  while index < encrypt_letter.length
+    decrypt_letter[index] = alphabet[alphabet.index(encrypt_letter[index]) - 1]
+  end
+  index += 1
+  puts decrypt_letter
+end
+puts decrypt('bcd')
