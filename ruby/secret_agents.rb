@@ -1,3 +1,7 @@
+# Asks a secret agent (the user) whether they would like to
+# decrypt or encrypt a password
+puts "Would you like to decrypt or encrypt a password?"
+password_answer = gets.chomp.downcase
 =begin
 Pseudocode - Encrypt method:
 Write an encrypt method that
