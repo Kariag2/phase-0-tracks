@@ -17,3 +17,5 @@ puts "What is your favorite decor theme? Please only list one."
 
 puts "What is your favorite color? Please only list one."
   favorite_color = gets.chomp
+
+client_information = {}
