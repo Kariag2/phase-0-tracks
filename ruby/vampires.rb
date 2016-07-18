@@ -75,12 +75,10 @@ loop do
     break
   end
 end
-
 # As long as the allergy is not “sunshine,”
 # continue the loop for as long as is needed.
 # If at any point the employee lists “sunshine” as an allergy,
 # skip directly to the result of “Probably a vampire.”
-
   employees_processed += 1
   # puts name
   # puts age
@@ -91,6 +89,7 @@ end
 # Add a line at the very end of your program that prints, "Actually, never mind!
 # What do these questions have to do with anything? Let's all be friends."
 puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
+<<<<<<< HEAD
 =======
 puts "What is your name?"
 name = gets.chomp
@@ -114,3 +113,5 @@ else
   age == "false"
 end
 >>>>>>> origin/master
+=======
+>>>>>>> 18f13638cc91b703ec8f6174cc6921043f40f161
