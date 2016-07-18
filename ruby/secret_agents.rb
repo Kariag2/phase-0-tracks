@@ -24,9 +24,10 @@ puts encrypt('abc')
 # puts encrypt('kari anne')
 # puts encrypt('xyz')
 # puts encrypt('wxy')
+
 =begin
 - Decrypt method:
-Write a decrypt method that
+Write a decrypt method that undoes the encrypt method
 Moves every letter of a string back one letter
 Spaces remain spaces
 =end
