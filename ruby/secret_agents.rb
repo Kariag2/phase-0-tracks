@@ -21,6 +21,7 @@ def encrypt(password)
   puts encrypt_letter
 end
 puts encrypt('abc')
+puts encrypt('zed')
 # puts encrypt('kari anne')
 # puts encrypt('xyz')
 # puts encrypt('wxy')
@@ -47,5 +48,9 @@ def decrypt(encrypt_letter)
   puts decrypt_letter
 end
 puts decrypt('bcd')
-puts decrypt('abc')
-puts decrypt('kari anne')
+puts decrypt('afe')
+# puts decrypt('abc')
+# puts decrypt('kari anne')
+#puts decrypt(encrypt("swordfish"))
+puts decrypt('swordfish')
+#This method call worked because ....
