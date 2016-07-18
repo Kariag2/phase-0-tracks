@@ -32,13 +32,20 @@ Moves every letter of a string back one letter
 Spaces remain spaces
 =end
 def decrypt(encrypt_letter)
+  # assign alphabet variable so that code can tell a to go to z
   alphabet = "abcdefghijklmnopqrstuvwxyz"
   decrypt_letter = ""
   index = 0
   while index < encrypt_letter.length
-    decrypt_letter[index] = alphabet[alphabet.index(encrypt_letter[index]) - 1]
+    if encrypt_letter[index] != " "
+     decrypt_letter[index] = alphabet[alphabet.index(encrypt_letter[index]) - 1]
+   else encrypt_letter[index] == " "
+      decrypt_letter[index] = encrypt_letter[index]
+   end
+    index += 1
   end
-  index += 1
   puts decrypt_letter
 end
 puts decrypt('bcd')
+puts decrypt('abc')
+puts decrypt('kari anne')
