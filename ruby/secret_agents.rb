@@ -56,18 +56,24 @@ end
 #This method call worked because ....
 # Asks a secret agent (the user) whether they would like to
 # decrypt or encrypt a password
+answer = ""
+while answer != 'decrypt' || answer != 'encrypt'
 puts "Would you like to decrypt or encrypt a password?"
 answer = gets.chomp.downcase
-if answer == 'decrypt'
+
+  if answer == 'decrypt'
 # Asks them for the password
-  puts "What is your password?"
-  password_answer = gets.chomp.downcase
-  decrypt(password_answer)
-elsif answer == 'encrypt'
-  puts "What is your password?"
-  password_answer = gets.chomp.downcase
-  encrypt(password_answer)
-else
-  puts "I did not understand you"
-  puts "Please type decrypt or encrypt"
+    puts "What is your password?"
+    password_answer = gets.chomp.downcase
+    decrypt(password_answer)
+    break
+  elsif answer == 'encrypt'
+    puts "What is your password?"
+    password_answer = gets.chomp.downcase
+    encrypt(password_answer)
+    break
+  else
+    puts "I did not understand you"
+    puts "Please type decrypt or encrypt"
+  end
 end
