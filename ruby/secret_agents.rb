@@ -1,7 +1,11 @@
 # Asks a secret agent (the user) whether they would like to
 # decrypt or encrypt a password
 puts "Would you like to decrypt or encrypt a password?"
+answer = gets.chomp.downcase
+# Asks them for the password
+puts "What is your password?"
 password_answer = gets.chomp.downcase
+
 =begin
 Pseudocode - Encrypt method:
 Write an encrypt method that
@@ -22,10 +26,10 @@ def encrypt(password)
     end
     index += 1
   end
-  puts encrypt_letter
+  # puts encrypt_letter
 end
-puts encrypt('abc')
-puts encrypt('zed')
+# puts encrypt('abc')
+# puts encrypt('zed')
 # puts encrypt('kari anne')
 # puts encrypt('xyz')
 # puts encrypt('wxy')
@@ -49,12 +53,12 @@ def decrypt(encrypt_letter)
    end
     index += 1
   end
-  puts decrypt_letter
+  # puts decrypt_letter
 end
-puts decrypt('bcd')
-puts decrypt('afe')
+# puts decrypt('bcd')
+# puts decrypt('afe')
 # puts decrypt('abc')
 # puts decrypt('kari anne')
 #puts decrypt(encrypt("swordfish"))
-puts decrypt('swordfish')
+# puts decrypt('swordfish')
 #This method call worked because ....
