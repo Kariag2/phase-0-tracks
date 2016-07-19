@@ -18,4 +18,9 @@ puts "What is your favorite decor theme? Please only list one."
 puts "What is your favorite color? Please only list one."
   favorite_color = gets.chomp
 
+# Convert client information into a hash
 client_information = {}
+  client_information[:name] = client_name
+  client_information[:age] = client_age
+
+p client_information
