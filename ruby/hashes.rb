@@ -22,5 +22,9 @@ puts "What is your favorite color? Please only list one."
 client_information = {}
   client_information[:name] = client_name
   client_information[:age] = client_age
+  client_information[:children] = number_of_children
+  client_information[:theme] = decor_theme
+  client_information[:color] = favorite_color
+
 
 p client_information
