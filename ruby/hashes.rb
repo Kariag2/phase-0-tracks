@@ -28,8 +28,8 @@ client_information = {}
 # Print out hash information
 p client_information
 # Give the user the opportunity to update a key
-puts "You put #{decor_theme} for your favorite decor theme would you like to change that? If yes please type your new theme otherwise please type none."
-  new_decor_theme = gets.chomp
+puts "To update the decor theme please type in new theme otherwise please type none"
+  new_decor_theme = gets.chomp.downcase
   if new_decor_theme == 'none'
     p client_information
   else
