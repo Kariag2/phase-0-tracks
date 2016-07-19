@@ -25,6 +25,14 @@ client_information = {}
   client_information[:children] = number_of_children
   client_information[:theme] = decor_theme
   client_information[:color] = favorite_color
-
-
+# Print out hash information
+p client_information
+# Give the user the opportunity to update a key
+puts "You put #{decor_theme} for your favorite decor theme would you like to change that? If yes please type your new theme otherwise please type none."
+  new_decor_theme = gets.chomp
+  if new_decor_theme == 'none'
+    p client_information
+  else
+    client_information[:theme] = new_decor_theme
+  end
 p client_information
