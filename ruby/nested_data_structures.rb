@@ -24,7 +24,9 @@ riot_fest = {
     ]
   }
 }
-# p riot_fest[:stage_1][:band_info][2]
+p riot_fest[:stage_1][:band_info][2]
 # expected output 'Death'
-#p riot_fest[:stage_2][:stage_name]
+p riot_fest[:stage_2][:stage_name]
 #expected output 'Riot'
+p riot_fest[:stage_3][:band_info][1]
+# expected output 'Iggy Pop'
