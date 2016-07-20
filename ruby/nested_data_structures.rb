@@ -30,3 +30,4 @@ p riot_fest[:stage_2][:stage_name]
 #expected output 'Riot'
 p riot_fest[:stage_3][:band_info][1]
 # expected output 'Iggy Pop'
+puts riot_fest
