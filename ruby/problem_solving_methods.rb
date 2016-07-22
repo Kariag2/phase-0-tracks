@@ -1,19 +1,17 @@
 arr = [42, 89, 23, 1]
-
 #def search_array(arr,number)
 #  arr.index(number)
 #end
-
 def search_array(arr, number)
   index = 0
-  array.each do |i|
+  arr.each do |i|
       if i == number
+        puts index
+        break
       end
-          index += 1
-      end
+      index += 1
+    end
 end
-
-
 p search_array(arr, 23)
 #p search_array(arr, 48)
 #p search_array(arr, 1)
