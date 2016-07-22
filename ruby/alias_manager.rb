@@ -21,29 +21,31 @@ def name_swap(name)
   spy_name = new_name[1] + ' ' + new_name[0]
   vowels = 'aeioua'
   consonants = 'bcdfghjklmnpqrstvwxyzb'
-  name_change = ""
+  new_letter = ""
   spy_name.chars.each do |letter|
     if vowels.include?(letter)
-      new_letter = change_vowels(letter)
+      new_letter += change_vowels(letter)
       p new_letter
     elsif consonants.include?(letter)
-      new_letter = change_consonant(letter)
+      new_letter += change_consonant(letter)
       p new_letter
     end
   end
-  change_name = name_change.split(' ')
+  change_name = new_letter.split(' ')
+
+
 end
-p name_swap("Kari Gilchrist")
+p name_swap("Felicia Torresu")
 
 # Change all of the vowels to the next vowel in 'aeiou'
 
-p change_vowels("a")
-p change_vowels("e")
-p change_vowels("i")
-p change_vowels("o")
-p change_vowels("u")
+# p change_vowels("a")
+# p change_vowels("e")
+# p change_vowels("i")
+# p change_vowels("o")
+# p change_vowels("u")
 
 # Change all consonants to the next consonant exculding all vowels
 
-p change_consonant("z")
-p change_consonant('d')
+# p change_consonant("z")
+# p change_consonant('d')
