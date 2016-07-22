@@ -1,10 +1,19 @@
 arr = [42, 89, 23, 1]
 
 def search_array(arr, number)
-  arr.index(number)
+  index = 0
+  arr.each do |i|
+    if number == i
+      puts index
+      break
+    else
+      index += 1;
+    end
+  end
 end
 
-p search_array(arr, 32)
+p search_array(arr, 23)
+p arr.each
 
 def fibonacci_adder(x)
   array = [0,1,1,2,3,5]
