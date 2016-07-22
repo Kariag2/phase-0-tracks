@@ -29,11 +29,12 @@ def name_swap(name)
     elsif consonants.include?(letter)
       new_letter += change_consonant(letter)
       p new_letter
+    else
+      new_letter += letter
     end
   end
   change_name = new_letter.split(' ')
-
-
+  final_name = change_name.map{|name| name.capitalize}.join(' ')
 end
 p name_swap("Felicia Torresu")
 
