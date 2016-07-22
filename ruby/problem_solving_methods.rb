@@ -5,43 +5,17 @@ arr = [42, 89, 23, 1]
 #end
 
 def search_array(arr, number)
-  a = arr.length
-index = 0
-#presults =0
-
- arr.each do |i|
-#     if index >= a
-#        break
-#     if number == i
-#        puts index
-#         break
-      if index >= a
-        puts "hello"
-      else
+  index = 0
+  array.each do |i|
+      if i == number
+      end
           index += 1
       end
-
-#          puts i
-     end
-    # puts results
-
-      # puts index
-       #break
-#    elsif index == a
-  #    bre
-#else
-#else
-    #  index += 1;
-#end
 end
-#    if index >= a
-#       break
-##    end
-#    puts "hello"
-#end
+
 
 p search_array(arr, 23)
-p search_array(arr, 48)
+#p search_array(arr, 48)
 #p search_array(arr, 1)
 #p search_array(arr, 89)
 #p search_array(arr, 48)
