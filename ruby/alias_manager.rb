@@ -36,11 +36,17 @@ def name_swap(name)
   change_name = new_letter.split(' ')
   final_name = change_name.map{|name| name.capitalize}.join(' ')
 end
-p name_swap("Felicia Torresu")
+#p name_swap("Felicia Torresu")
 
+loop do
 puts "What name would you like to change?"
 name = gets.chomp
-p name_swap(name)
+  if name == 'quit'
+    break
+  else
+    p name_swap(name)
+  end
+end
 
 # Change all of the vowels to the next vowel in 'aeiou'
 
