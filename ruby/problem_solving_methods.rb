@@ -19,22 +19,35 @@ p search_array(arr, 23)
 #p search_array(arr, 48)
 #p search_array(arr, 1)
 
-# def fibonacci_adder(x)
-#   array = [0,1,1,2,3,5]
-#   if x >= 7
-#     (x-6).times do
-#       array << (array[-1] + array[-2])
-#       p array
-#     end
-#   else
-#     p array[0...x]
-#   end
-# end
-#
-# fibonacci_adder(100)
-#
+def fibonacci_adder(x)
+  array = [0,1]
+    if x > 2
+      (x-2).times do
+        array << (array[-1] + array[-2])
+      end
+    else
+        array
+    end
+array
+end
+# p fibonacci_adder(100)
+# p fibonacci_adder(100).last == 218922995834555169026
+
+#    if x > 2
+#      (x-2).times do
+#        array << (array[-1] + array[-2])
+#      end
+#    else
+#        array[0,1]
+#  end
+#p array
+#end
+
+#p fibonacci_adder(3)
+
+
 # array = [4 ,32, 567, 1, -54]
-#
+
 # #Bubble Sort
 # #Define a variable called "swapped", which is true if no swaps were made
 # #Repeatedly iterate through the array until no swaps need to be made
