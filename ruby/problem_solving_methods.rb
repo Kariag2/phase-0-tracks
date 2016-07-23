@@ -6,7 +6,7 @@ def search_array(arr, number)
   index = 0
   arr.each do |i|
       if i == number
-        p index
+        puts index
         break
       end
       index += 1
