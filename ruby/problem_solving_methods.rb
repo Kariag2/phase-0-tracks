@@ -1,18 +1,18 @@
-# arr = [42, 89, 23, 1]
-# #def search_array(arr,number)
-# #  arr.index(number)
-# #end
-# def search_array(arr, number)
-#   index = 0
-#   arr.each do |i|
-#       if i == number
-#         puts index
-#         break
-#       end
-#       index += 1
-#     end
-# end
-# p search_array(arr, 23)
+arr = [42, 89, 23, 1]
+#def search_array(arr,number)
+#  arr.index(number)
+#end
+def search_array(arr, number)
+  index = 0
+  arr.each do |i|
+      if i == number
+        p index
+        break
+      end
+      index += 1
+    end
+end
+p search_array(arr, 23)
 #p search_array(arr, 48)
 #p search_array(arr, 1)
 #p search_array(arr, 89)
@@ -31,7 +31,7 @@ def fibonacci_adder(x)
 array
 end
 # p fibonacci_adder(100)
-p fibonacci_adder(100).last == 218922995834555169026
+# p fibonacci_adder(100).last == 218922995834555169026
 
 #    if x > 2
 #      (x-2).times do
