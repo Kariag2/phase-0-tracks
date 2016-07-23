@@ -31,19 +31,7 @@ def fibonacci_adder(x)
 array
 end
 # p fibonacci_adder(100)
-# p fibonacci_adder(100).last == 218922995834555169026
-
-#    if x > 2
-#      (x-2).times do
-#        array << (array[-1] + array[-2])
-#      end
-#    else
-#        array[0,1]
-#  end
-#p array
-#end
-
-#p fibonacci_adder(3)
+p fibonacci_adder(100).last == 218922995834555169026
 
 
 # array = [4 ,32, 567, 1, -54]
