@@ -46,20 +46,22 @@ def name_swap(name)
   change_name = new_letter.split(' ')
   final_name = change_name.map{|name| name.capitalize}.join(' ')
 # Add a hash to store names and alias names
-  alias_names = {}
-  alias_names[:name] = name
-  alias_names[:encrypted_name] = final_name
-  p alias_names
+  alias_names = { name: name, encrypted_name: final_name}
+  alias_names.store(:name, name)
+  alias_names.store(:encrypted_name, final_name)
+  return alias_names
   end
+
 #p name_swap("Felicia Torresu")
 # Add a loop to ask user for input and then change their input
 loop do
 puts "What name would you like to change? When you are finished please type 'quit'"
-name = gets.chomp
+name = gets.chomp.downcase
   if name == 'quit'
     break
   else
     p name_swap(name)
   end
 end
-#p name_swap("Felicia Torresu")
+p name_swap("Felicia Torresu")
+# p alias_names
