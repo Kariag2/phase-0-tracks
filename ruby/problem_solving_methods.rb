@@ -1,8 +1,11 @@
 arr = [42, 89, 23, 1]
-
+#def search_array(arr,number)
+#  arr.index(number)
+#end
 def search_array(arr, number)
   index = 0
   arr.each do |i|
+<<<<<<< HEAD
     if number == i
       puts index
       break
@@ -10,8 +13,23 @@ def search_array(arr, number)
       index += 1;
     end
   end
+=======
+      if i == number
+        puts index
+        break
+      end
+      index += 1
+    end
+>>>>>>> 35e0ef20638f7440874a365184ba2502615c7bbf
 end
+p search_array(arr, 23)
+#p search_array(arr, 48)
+#p search_array(arr, 1)
+#p search_array(arr, 89)
+#p search_array(arr, 48)
+#p search_array(arr, 1)
 
+<<<<<<< HEAD
 p search_array(arr, 23)
 p arr.each
 # def fibonacci_adder(x)
@@ -30,6 +48,25 @@ p arr.each
 #
 # array = [4 ,32, 567, 1, -54]
 #
+=======
+def fibonacci_adder(x)
+  array = [0,1]
+    if x > 2
+      (x-2).times do
+        array << (array[-1] + array[-2])
+      end
+    else
+        array
+    end
+array
+end
+# p fibonacci_adder(100)
+p fibonacci_adder(100).last == 218922995834555169026
+
+
+# array = [4 ,32, 567, 1, -54]
+
+>>>>>>> 35e0ef20638f7440874a365184ba2502615c7bbf
 # #Bubble Sort
 # #Define a variable called "swapped", which is true if no swaps were made
 # #Repeatedly iterate through the array until no swaps need to be made
