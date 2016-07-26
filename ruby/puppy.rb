@@ -1,5 +1,5 @@
 SPECIES ----------------------------
-Dog
+Puppy
 
 CHARACTERISTICS --------------------
 Name: german sheperd
@@ -7,6 +7,7 @@ Color: brown and black
 Spots: none
 Leg count: 4
 Eye count: 2
+Ear count: 2
 Friendly: mostly
 Tongue Length: long
 
