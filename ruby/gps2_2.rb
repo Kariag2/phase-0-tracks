@@ -13,13 +13,8 @@ def create_list(string_of_items)
   array_of_items.each do |item|
     grocery_items[item] = 1
   end
-
   p grocery_items
-
 end
-
-### DRIVER CODE
-example_list = create_list("carrots apples cereal pizza")
 
 # Method to add an item to a list
 # input: item name and optional quantity
@@ -31,11 +26,6 @@ def add_item(grocery_list, new_item, quantity = 1)
   grocery_list
 end
 
-### DRIVER CODE
-p add_item(example_list, "bananas", 7)
-p add_item(example_list, "ice cream")
-
-
 # Method to remove an item from the list
 # input: hash to tell program what list to remove from and name of item to remove.
 # steps: same as above.
@@ -46,9 +36,6 @@ def remove_item(grocery_list, key)
   grocery_list
 end
 
-##DRIVER CODE
-p remove_item(example_list, "bananas")
-
 # Method to update the quantity of an item
 # input: hash to tell program what list and key to update the quantity
 # steps: Update the quantity of a key
@@ -58,9 +45,6 @@ def update_quantity(grocery_list, item, new_quantity)
   grocery_list[item] = new_quantity
   grocery_list
 end
-
-p update_quantity(example_list, "ice cream", 3)
-
 
 # Method to print a list and make it look pretty
 # input: hash with items and quantity
@@ -74,4 +58,10 @@ def print_list(list)
   end
 end
 
+### DRIVER CODE
+example_list = create_list("carrots apples cereal pizza")
+p add_item(example_list, "bananas", 7)
+p add_item(example_list, "ice cream")
+p remove_item(example_list, "bananas")
+p update_quantity(example_list, "ice cream", 3)
 print_list(example_list)
