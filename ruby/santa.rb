@@ -1,5 +1,10 @@
 # Make a santa class
 class Santa
+# Input: An initialize method
+# Output: Prints initializing santa instance.....
+  def initialize
+    puts "Initializing Santa instance ..."
+  end
 # Input: A speak method for Santa
 # Output: Print "Ho, ho, ho! Haaaappy holidays!"
    def speak
@@ -8,9 +13,10 @@ class Santa
 # Input: A method with a parameter to take a cookie type
 # Output: Print that was a good type of cookie
    def eat_milk_and_cookies(cookie)
-     puts "That was a good #{cookie}"
+     puts "That was a good #{cookie}!"
    end
 
 end
 santa = Santa.new
 p santa.speak
+p santa.eat_milk_and_cookies("snickerdoodle")
