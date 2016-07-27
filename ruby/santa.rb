@@ -3,7 +3,7 @@ class Santa
 # Input: An initialize method
 # Output: Prints initializing santa instance.....
 # Update santa class with attributes
-  def initialize(gender, ethnicity)
+  def initialize(gender)
     puts "Initializing Santa instance ..."
     @gender = gender
     @ethnicity = ethnicity
@@ -20,6 +20,7 @@ class Santa
    def eat_milk_and_cookies(cookie)
      puts "That was a good #{cookie}!"
    end
+
 # Add three attribute changing methods
 # Birthday ages santa by one year
   def celebrate_birthday
@@ -45,7 +46,7 @@ class Santa
 
   def ethnicity
     @ethnicity
-  end 
+  end
 
 end
 
@@ -58,12 +59,27 @@ end
 # p santas
 
 ### DRIVER CODE
-santa = Santa.new("transgender", "pegacorn")
-p santa.speak
-p santa.eat_milk_and_cookies("snickerdoodle")
-santa = Santa.new("female", "mixed race")
-p santa.speak
-p santa.eat_milk_and_cookies("sugar cookie")
-santa = Santa.new("male", "icelandic")
-p santa.speak
-p santa.eat_milk_and_cookies("chocolate chip cookie")
+# Make an empty container for santa collection
+santas = []
+santa_genders = ["transgender", "female", "N/A"]
+santa_ethnicities = ["a pegacorn", "mixed race", "icelandic"]
+puts "Creating new santas......"
+
+santa_genders.each do |new_gender|
+  puts "Creating a santa that identifies as #{new_gender}...."
+  santas << Santa.new(new_gender)
+  santa_ethnicities.each do |new_ethnicities|
+    puts "Santa also identifies as #{new_ethnicities}...."
+    santas << Santa.new(new_ethnicities)
+  puts "There are now #{santas.length} santas in the array."
+end
+end
+# p santa = Santa.new("transgender", "pegacorn")
+# p santa.speak
+# p santa.eat_milk_and_cookies("snickerdoodle")
+# p santa = Santa.new("female", "mixed race")
+# p santa.speak
+# p santa.eat_milk_and_cookies("sugar cookie")
+# p santa = Santa.new("male", "icelandic")
+# p santa.speak
+# p santa.eat_milk_and_cookies("chocolate chip cookie")
