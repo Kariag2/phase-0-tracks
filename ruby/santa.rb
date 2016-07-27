@@ -20,6 +20,10 @@ class Santa
    def eat_milk_and_cookies(cookie)
      puts "That was a good #{cookie}!"
    end
+# Add three attribute changing methods
+  def celebrate_birthday
+    @age = new_age + 1
+  end
 
 end
 
