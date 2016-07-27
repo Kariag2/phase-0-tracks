@@ -26,11 +26,16 @@ class Santa
     @age += 1
   end
 # Mad at reindeer takes reindeers name
-# and moves it to last place in the rankings
+# Get reindeer based on index
+# Move it to last place in the data structure
   def get_mad_at(reindeer_name)
     bad_reindeer = @reindeer_ranking.index(reindeer_name)
     @reindeer_ranking.insert(-1, @reindeer_ranking.delete_at(bad_reindeer))
   end
+# Give gender attribute a setter method
+  def gender=(new_gender)
+    @gender = new_gender
+  end 
 
 end
 
