@@ -27,10 +27,11 @@ class Santa
   end
 # Mad at reindeer takes reindeers name
 # and moves it to last place in the rankings
-  def get_mad_at
-    @reindeer_ranking
+  def get_mad_at(reindeer_name)
+    bad_reindeer = @reindeer_ranking.index(reindeer_name)
+    @reindeer_ranking.insert(-1, @reindeer_ranking.delete_at(bad_reindeer))
   end
-  
+
 end
 
 # santas = []
