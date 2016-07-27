@@ -3,7 +3,7 @@ class Santa
 # Input: An initialize method
 # Output: Prints initializing santa instance.....
 # Update santa class with attributes
-  def initialize
+  def initialize(gender, ethnicity)
     puts "Initializing Santa instance ..."
     @gender = gender
     @ethnicity = ethnicity
@@ -23,14 +23,21 @@ class Santa
 
 end
 
+# santas = []
+# example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+# example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+# example_genders.length.times do |i|
+#   santas << Santa.new(example_genders[i], example_ethnicities[i])
+# end
+# p santas
+
 ### DRIVER CODE
-santa = Santa.new
+santa = Santa.new("transgender", "pegacorn")
 p santa.speak
 p santa.eat_milk_and_cookies("snickerdoodle")
-
-santas = []
-example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
-example_genders.length.times do |i|
-  santas << Santa.new(example_genders[i], example_ethnicities[i])
-end
+santa = Santa.new("female", "mixed race")
+p santa.speak
+p santa.eat_milk_and_cookies("sugar cookie")
+santa = Santa.new("male", "icelandic")
+p santa.speak
+p santa.eat_milk_and_cookies("chocolate chip cookie")
