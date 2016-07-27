@@ -2,8 +2,13 @@
 class Santa
 # Input: An initialize method
 # Output: Prints initializing santa instance.....
+# Update santa class with attributes
   def initialize
     puts "Initializing Santa instance ..."
+    @gender = gender
+    @ethnicity = ethnicity
+    @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+    @age = 0
   end
 # Input: A speak method for Santa
 # Output: Print "Ho, ho, ho! Haaaappy holidays!"
@@ -17,6 +22,8 @@ class Santa
    end
 
 end
+
+### DRIVER CODE
 santa = Santa.new
 p santa.speak
 p santa.eat_milk_and_cookies("snickerdoodle")
