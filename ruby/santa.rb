@@ -21,10 +21,16 @@ class Santa
      puts "That was a good #{cookie}!"
    end
 # Add three attribute changing methods
+# Birthday ages santa by one year
   def celebrate_birthday
-    @age = new_age + 1
+    @age += 1
   end
-
+# Mad at reindeer takes reindeers name
+# and moves it to last place in the rankings
+  def get_mad_at
+    @reindeer_ranking
+  end
+  
 end
 
 # santas = []
