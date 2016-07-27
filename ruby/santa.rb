@@ -35,6 +35,16 @@ class Santa
 # Give gender attribute a setter method
   def gender=(new_gender)
     @gender = new_gender
+  end
+# Add two getter methods
+# Age should return @age
+# Ethnicity should return @Ethnicity
+  def age
+    @age
+  end
+
+  def ethnicity
+    @ethnicity
   end 
 
 end
