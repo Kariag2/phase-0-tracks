@@ -59,13 +59,13 @@ attr_accessor :gender
 #   end
 
 end
-# santas = []
-# example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-# example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
-# example_genders.length.times do |i|
-#   santas << Santa.new(example_genders[i], example_ethnicities[i])
-# end
-# p santas
+santas = []
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+example_genders.length.times do |i|
+  santas << Santa.new(example_genders[i], example_ethnicities[i])
+end
+p santas
 
 ### DRIVER CODE
 # Make an empty container for santa collection
@@ -83,8 +83,8 @@ p santa.information
 # p santa.eat_milk_and_cookies("chocolate chip cookie")
 # p santa.information
 ## TEST GETTERS and SETTERS
-p santa.celebrate_birthday
-p santa.get_mad_at("Vixen")
-p santa.gender = "pirate"
-p santa.information
-puts "Santa is #{santa.age} and is #{santa.ethnicity}"
+# p santa.celebrate_birthday
+# p santa.get_mad_at("Vixen")
+# p santa.gender = "pirate"
+# p santa.information
+# puts "Santa is #{santa.age} and is #{santa.ethnicity}"
