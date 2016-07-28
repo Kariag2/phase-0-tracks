@@ -1,9 +1,12 @@
 # Make a santa class
 class Santa
+  # Refactor getter and setter methods
+attr_reader :age, :ethnicity
+attr_accessor :gender
 # Input: An initialize method
 # Output: Prints initializing santa instance.....
 # Update santa class with attributes
-  def initialize(gender)
+  def initialize(gender, ethnicity)
     puts "Initializing Santa instance ..."
     @gender = gender
     @ethnicity = ethnicity
@@ -31,6 +34,7 @@ class Santa
 # Birthday ages santa by one year
   def celebrate_birthday
     @age += 1
+    puts "Santa is #{@age} years old"
   end
 # Mad at reindeer takes reindeers name
 # Get reindeer based on index
@@ -40,22 +44,21 @@ class Santa
     @reindeer_ranking.insert(-1, @reindeer_ranking.delete_at(bad_reindeer))
   end
 # Give gender attribute a setter method
-  def gender=(new_gender)
-    @gender = new_gender
-  end
-# Add two getter methods
-# Age should return @age
-# Ethnicity should return @Ethnicity
-  def age
-    @age
-  end
-
-  def ethnicity
-    @ethnicity
-  end
+#   def gender=(new_gender)
+#     @gender = new_gender
+#   end
+# # Add two getter methods
+# # Age should return @age
+# # Ethnicity should return @Ethnicity
+#   def age
+#     @age
+#   end
+#
+#   def ethnicity
+#     @ethnicity
+#   end
 
 end
-
 # santas = []
 # example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
 # example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
@@ -66,27 +69,16 @@ end
 
 ### DRIVER CODE
 # Make an empty container for santa collection
-santas = []
-santa_genders = ["transgender", "female", "N/A"]
-santa_ethnicities = ["a pegacorn", "mixed race", "icelandic"]
-puts "Creating new santas......"
 
-santa_genders.each do |new_gender|
-  puts "Creating a santa that identifies as #{new_gender}...."
-  santas << Santa.new(new_gender)
-  santa_ethnicities.each do |new_ethnicities|
-    puts "Santa also identifies as #{new_ethnicities}...."
-    santas << Santa.new(new_ethnicities)
-  puts "There are now #{santas.length} santas in the array."
-end
-end
-p santas
-# p santa = Santa.new("transgender", "pegacorn")
-# p santa.speak
-# p santa.eat_milk_and_cookies("snickerdoodle")
-# p santa = Santa.new("female", "mixed race")
-# p santa.speak
-# p santa.eat_milk_and_cookies("sugar cookie")
-# p santa = Santa.new("male", "icelandic")
-# p santa.speak
-# p santa.eat_milk_and_cookies("chocolate chip cookie")
+p santa = Santa.new("transgender", "pegacorn")
+p santa.speak
+p santa.eat_milk_and_cookies("snickerdoodle")
+p santa.information
+p santa = Santa.new("female", "mixed race")
+p santa.speak
+p santa.eat_milk_and_cookies("sugar cookie")
+p santa.information
+p santa = Santa.new("male", "icelandic")
+p santa.speak
+p santa.eat_milk_and_cookies("chocolate chip cookie")
+p santa.information
