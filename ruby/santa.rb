@@ -21,6 +21,12 @@ class Santa
      puts "That was a good #{cookie}!"
    end
 
+# Add a method that will print out information about each santa
+  def information
+    puts "Santa identifies as a #{@gender} and of #{@ethnicity} heritage, and is #{@age} years old."
+    puts "Santa's favorite reindeer, in order are #{@reindeer_ranking}."
+  end
+
 # Add three attribute changing methods
 # Birthday ages santa by one year
   def celebrate_birthday
@@ -74,6 +80,7 @@ santa_genders.each do |new_gender|
   puts "There are now #{santas.length} santas in the array."
 end
 end
+p santas
 # p santa = Santa.new("transgender", "pegacorn")
 # p santa.speak
 # p santa.eat_milk_and_cookies("snickerdoodle")
