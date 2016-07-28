@@ -11,7 +11,7 @@ attr_accessor :gender
     @gender = gender
     @ethnicity = ethnicity
     @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-    @age = 0
+    @age = rand(0..140)
   end
 # Input: A speak method for Santa
 # Output: Print "Ho, ho, ho! Haaaappy holidays!"
@@ -60,20 +60,24 @@ attr_accessor :gender
 
 end
 santas = []
-example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A", "transgender", "androgyne", "intergender", "polygender"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A", "Pirate", "mixed race", "Icelandic", "Pacific Islander"]
 example_genders.length.times do |i|
   santas << Santa.new(example_genders[i], example_ethnicities[i])
 end
-p santas
+# p santas
+50.times do |new_santa|
+	santas << Santa.new(example_genders.sample, example_ethnicities.sample)
+	puts "This Santa is #{santas[new_santa].age} years old, and identifies as #{santas[new_santa].gender} and as #{santas[new_santa].ethnicity}."
+end
 
 ### DRIVER CODE
 # Make an empty container for santa collection
 
-p santa = Santa.new("transgender", "pegacorn")
-p santa.speak
-p santa.eat_milk_and_cookies("snickerdoodle")
-p santa.information
+# p santa = Santa.new("transgender", "pegacorn")
+# p santa.speak
+# p santa.eat_milk_and_cookies("snickerdoodle")
+# p santa.information
 # p santa = Santa.new("female", "mixed race")
 # p santa.speak
 # p santa.eat_milk_and_cookies("sugar cookie")
