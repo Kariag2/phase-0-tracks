@@ -74,11 +74,17 @@ p santa = Santa.new("transgender", "pegacorn")
 p santa.speak
 p santa.eat_milk_and_cookies("snickerdoodle")
 p santa.information
-p santa = Santa.new("female", "mixed race")
-p santa.speak
-p santa.eat_milk_and_cookies("sugar cookie")
+# p santa = Santa.new("female", "mixed race")
+# p santa.speak
+# p santa.eat_milk_and_cookies("sugar cookie")
+# p santa.information
+# p santa = Santa.new("male", "icelandic")
+# p santa.speak
+# p santa.eat_milk_and_cookies("chocolate chip cookie")
+# p santa.information
+## TEST GETTERS and SETTERS
+p santa.celebrate_birthday
+p santa.get_mad_at("Vixen")
+p santa.gender = "pirate"
 p santa.information
-p santa = Santa.new("male", "icelandic")
-p santa.speak
-p santa.eat_milk_and_cookies("chocolate chip cookie")
-p santa.information
+puts "Santa is #{santa.age} and is #{santa.ethnicity}"
