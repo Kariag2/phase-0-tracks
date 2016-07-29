@@ -17,3 +17,7 @@ module Shout
     words.upcase + "!!!!"
   end
 end
+
+class Mom
+  include Shout
+end
