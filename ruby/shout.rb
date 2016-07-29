@@ -21,3 +21,7 @@ end
 class Mom
   include Shout
 end
+
+class Dad
+  include Shout
+end
