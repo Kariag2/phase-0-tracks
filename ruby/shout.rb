@@ -25,3 +25,9 @@ end
 class Dad
   include Shout
 end
+### DRIVER CODE
+mom = Mom.new
+p mom.yell('I told you to clean up your room')
+
+dad = Dad.new
+p dad.yell('I told you to listen to your mother')
