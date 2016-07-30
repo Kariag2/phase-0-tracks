@@ -19,3 +19,14 @@ which would become "_ _ _ c _ _ _" after the user enters a guess of "c".
 
 The user should get a congratulatory message if they win,
 and a taunting message if they lose.
+
+####Pseudocode
+# word-guessing game class
+# Input: User enters a word
+# Output: Underscores representing how many letters are in the word
+
+# Input: A different user guesses a letter in the word
+# Output: If the letter is in the word it will replace the underscore
+
+# Input: Guesses are limited and equal to how many letters are in the word
+# Output: A congratulatory message if they win or a taunting message if they lose
