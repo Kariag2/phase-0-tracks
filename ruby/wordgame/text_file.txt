@@ -29,4 +29,8 @@ and a taunting message if they lose.
 # Output: If the letter is in the word it will replace the underscore
 
 # Input: Guesses are limited and equal to how many letters are in the word
+# Output: A return message with how many more attempts they have to guess
+          # and to guess another letter
+
+# Input: On the users last guess tell them to attempt to guess the word 
 # Output: A congratulatory message if they win or a taunting message if they lose
