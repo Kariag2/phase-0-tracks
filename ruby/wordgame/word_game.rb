@@ -1,11 +1,11 @@
 class WordGame
-attr_reader :array, :letters, :is_over
+attr_reader :array
+attr_accessor :letters
 #attr_accessor :letters
 
   def initialize(array,  letters)
     @array = array
     @letters = letters
-    @is_over = false
   end
 
   def get_word
@@ -24,9 +24,8 @@ attr_reader :array, :letters, :is_over
   end
 
   def guess_letter
-    puts "Guess a letter......"
+    puts "Guess a letter in the word...."
     @letters = gets.chomp.downcase
-    new_letter = @letter
   end
   # Input: User guesses a letter in the word
   # Output: If the letter is in the word it replaces the representing underscore
@@ -36,14 +35,16 @@ attr_reader :array, :letters, :is_over
   #   @letters = gets.chomp.downcase
   # end
 
-word_game = WordGame.new("unicorns", "c")
+# User Interface
+
 puts "Welcome to the Word Guessing Game!"
+word_game = WordGame.new("unicorns", "c")
 
 
-while !word_game.is_over
-  puts "Guess a letter......"
-  letter_guess = gets.chomp
-end
+# while !word_game.is_over
+#   puts "Guess a letter......"
+#   letter_guess = gets.chomp
+# end
 
 end
 # def get_word
