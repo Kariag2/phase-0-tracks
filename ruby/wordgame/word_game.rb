@@ -57,15 +57,15 @@ attr_accessor :letters, :guess_count
     end
 
   #  counter = word_game.turns_guessing
-    while @guess_count != 0
-      # Expecting it to run the guess_letter method but it is not
-        puts guess_letter
-        if @letters == 'quit'
-          break
-        else
-          puts "That letter is not in the word, guess again...or type 'quit'to exit."
-        end
-      end
+    # while @guess_count != 0
+    #   # Expecting it to run the guess_letter method but it is not
+    #     puts guess_letter
+    #     if @letters == 'quit'
+    #       break
+    #     else
+    #       puts "That letter is not in the word, guess again...or type 'quit'to exit."
+    #     end
+    #   end
 end
 
 
