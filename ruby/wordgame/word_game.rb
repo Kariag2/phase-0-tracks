@@ -6,6 +6,7 @@ attr_accessor :letters, :guess_count
     @word = word
     @letters = letters
     @guess_count = 0
+    @is_over = false
   end
   # Input: Ask user what word they would like to use
   # Output: Word retrieved from user and downcased
@@ -53,8 +54,32 @@ attr_accessor :letters, :guess_count
     def turns_guessing
       number_of_guesses = retrieve_word.length
       @guess_count = number_of_guesses
+      @guess_count -= 1
     end
+
+    def check_word(retrieve_word)
+        if turns_guessing >= @guess_count
+          @guess_count -= 1
+            @is_over = false
+        else
+          true
+        end
+    end
+
+  #  counter = word_game.turns_guessing
+    while @guess_count != 0
+      # Expecting it to run the guess_letter method but it is not
+        puts guess_letter
+        if @letters == 'quit'
+          break
+        else
+          puts "That letter is not in the word, guess again...or type 'quit'to exit."
+        end
+      end
 end
+
+
+
 
 
 
@@ -69,3 +94,4 @@ p word_game.retrieve_word
 p word_game.underscore
 p word_game.guess_letter
 p word_game.turns_guessing
+p word_game.check_word('rainbows')
