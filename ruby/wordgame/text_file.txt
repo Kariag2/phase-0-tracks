@@ -23,7 +23,14 @@ and a taunting message if they lose.
 ####Pseudocode
 # word-guessing game class
 # Input: User enters a word
-# Output: Underscores representing how many letters are in the word
+# Output: Returns an array with the word in it
+
+# Input: Based on the word given get the word length
+# Output: Use the word length to return that many underscores
+
+# Input: User guesses a letter in the word
+# Output: If the letter is in the word it replaces the representing underscore
+        # Else it uses up one guess
 
 # Input: A different user guesses a letter in the word
 # Output: If the letter is in the word it will replace the underscore
@@ -32,5 +39,5 @@ and a taunting message if they lose.
 # Output: A return message with how many more attempts they have to guess
           # and to guess another letter
 
-# Input: On the users last guess tell them to attempt to guess the word 
+# Input: On the users last guess tell them to attempt to guess the word
 # Output: A congratulatory message if they win or a taunting message if they lose
