@@ -1,10 +1,11 @@
 class WordGame
 attr_reader :word
-attr_accessor :letters
+attr_accessor :letters, :guess_count
 
   def initialize(word, letters)
     @word = word
     @letters = letters
+    @guess_count = 0
   end
   # Input: Ask user what word they would like to use
   # Output: Word retrieved from user and downcased
@@ -22,30 +23,25 @@ attr_accessor :letters
   def underscore
     retrieve_word = @word.length
     underscores = '_' * retrieve_word
-    underscore_array = underscores.chars
+    @underscore_array = underscores.chars
   end
   # Input: User guesses a letter in the word
   # Output: If the letter is in the word it replaces the representing underscore
            # Else it uses up one guess
-
-
   def guess_letter
     puts "Guess a letter in the word...."
     @letters = gets.chomp.downcase
       if retrieve_word.include?(@letters)
-      underscore.delete_at(retrieve_word.index(@letters))
-      underscore.insert(retrieve_word.index(@letters), @letters)
-      #counter += 1
-      # elsif
-      # counter == @word.length
-      # puts "You have run out of guesses you do not know the word!"
+      @underscore_array.delete_at(retrieve_word.index(@letters))
+      @underscore_array.insert(retrieve_word.index(@letters), @letters)
       else
-      "That is not a letter in the word, please guess another letter"
-      #counter += 1
+      "That is not a letter in the word, please guess another letter..."
       end
-  end
-
+    end
 end
+
+
+
 
 
 # User Interface
