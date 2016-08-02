@@ -41,7 +41,8 @@ attr_accessor :letters
 
 puts "Welcome to the Word Guessing Game!"
 word_game = WordGame.new("unicorns", "c")
-puts word_game.guess_letter
+p word_game.get_word
+p word_game.guess_letter
 
 # while !word_game.is_over
 #   puts "Guess a letter......"
