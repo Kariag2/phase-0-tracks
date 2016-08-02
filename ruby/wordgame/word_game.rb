@@ -1,9 +1,8 @@
 class WordGame
 attr_reader :word
 attr_accessor :letters
-#attr_accessor :letters
 
-  def initialize(word,  letters)
+  def initialize(word, letters)
     @word = word
     @letters = letters
   end
@@ -16,37 +15,39 @@ attr_accessor :letters
   # Input: Word given by user
   # Output: Word split into letters and put into an array
   def retrieve_word
-    @letter_split = @word.chars
+    letter_split = @word.chars
   end
   # Input: Based on the word given get the word length
   # Output: Use the word length to return that many underscores in an array
   def underscore
     retrieve_word = @word.length
     underscores = '_' * retrieve_word
-    @underscore_array = underscores.chars
+    underscore_array = underscores.chars
   end
   # Input: User guesses a letter in the word
   # Output: If the letter is in the word it replaces the representing underscore
-          # Else it uses up one guess
+           # Else it uses up one guess
+
+
   def guess_letter
     puts "Guess a letter in the word...."
     @letters = gets.chomp.downcase
-    if @letter_split.include?(@letters)
-      @underscore_array.delete_at(@letter_split.index(@letters))
-      @underscore_array.insert(@letter_split.index(@letters), @letters)
-    else
-      "Please guess again"
-    end
-
+      if retrieve_word.include?(@letters)
+      underscore.delete_at(retrieve_word.index(@letters))
+      underscore.insert(retrieve_word.index(@letters), @letters)
+      #counter += 1
+      # elsif
+      # counter == @word.length
+      # puts "You have run out of guesses you do not know the word!"
+      else
+      "That is not a letter in the word, please guess another letter"
+      #counter += 1
+      end
   end
 
-  # def return_index
-  #   @letter_split.index(@letter)
-  # end
-  #   puts "Guess a letter...."
-  #   @letters = gets.chomp.downcase
-  # end
 end
+
+
 # User Interface
 
 puts "Welcome to the Word Guessing Game!"
@@ -55,12 +56,3 @@ p word_game.get_word
 p word_game.retrieve_word
 p word_game.underscore
 p word_game.guess_letter
-
-
-
-end
-
-# def get_word
-#   puts "What word would you like to use in this guessing game?"
-#   word = gets.chomp
-# end
