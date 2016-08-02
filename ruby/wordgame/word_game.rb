@@ -1,10 +1,10 @@
 class WordGame
-attr_reader :array
+attr_reader :word
 attr_accessor :letters
 #attr_accessor :letters
 
-  def initialize(array,  letters)
-    @array = array
+  def initialize(word,  letters)
+    @word = word
     @letters = letters
   end
 
