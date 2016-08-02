@@ -36,8 +36,9 @@ attr_accessor :letters, :guess_count
             retrieve_word.include?(@letters)
             @underscore_array.delete_at(retrieve_word.index(@letters))
             @underscore_array.insert(retrieve_word.index(@letters), @letters)
+            return @underscore_array
           else
-            "That is not a letter in the word, please guess another letter.... If  you would like to quit type 'quit'."
+            puts "That is not a letter in the word, please guess another letter.... If  you would like to quit type 'quit'."
           end
     end
 
@@ -47,7 +48,7 @@ attr_accessor :letters, :guess_count
       @guess_count -= 1
     end
 
-    def check_word(retrieve_word)
+    def check_word
         if turns_guessing >= @guess_count
           @guess_count -= 1
             @is_over = false
@@ -68,13 +69,6 @@ attr_accessor :letters, :guess_count
     #   end
 end
 
-
-
-
-
-
-
-
 # User Interface
 
 puts "Welcome to the Word Guessing Game!"
@@ -84,4 +78,4 @@ p word_game.retrieve_word
 p word_game.underscore
 p word_game.guess_letter
 p word_game.turns_guessing
-p word_game.check_word('rainbows')
+p word_game.check_word
