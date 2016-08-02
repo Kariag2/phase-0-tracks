@@ -1,0 +1,43 @@
+pseudocode a class for a word-guessing game
+Assume your driver code will handle input and output
+as far as the user is concerned. In other words, write a class
+designed for a computer program to use,
+not one designed for a human to use directly,
+then use driver code to bridge the gap between human and Ruby object.
+
+One user can enter a word (or phrase, if you would like your game to support that),
+and another user attempts to guess the word.
+
+Guesses are limited, and the number of guesses available is related to the
+length of the word.
+
+Repeated guesses do not count against the user.
+The guessing player receives continual feedback on the current state of the word.
+So if the secret word is "unicorn", the user will start out seeing something
+like "_ _ _ _ _ _ _",
+which would become "_ _ _ c _ _ _" after the user enters a guess of "c".
+
+The user should get a congratulatory message if they win,
+and a taunting message if they lose.
+
+####Pseudocode
+# word-guessing game class
+# Input: User enters a word
+# Output: Returns an array with the word in it
+
+# Input: Based on the word given get the word length
+# Output: Use the word length to return that many underscores
+
+# Input: User guesses a letter in the word
+# Output: If the letter is in the word it replaces the representing underscore
+        # Else it uses up one guess
+
+# Input: A different user guesses a letter in the word
+# Output: If the letter is in the word it will replace the underscore
+
+# Input: Guesses are limited and equal to how many letters are in the word
+# Output: A return message with how many more attempts they have to guess
+          # and to guess another letter
+
+# Input: On the users last guess tell them to attempt to guess the word
+# Output: A congratulatory message if they win or a taunting message if they lose

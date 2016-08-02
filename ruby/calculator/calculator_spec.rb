@@ -25,7 +25,14 @@ describe Calculator do
     expect(calculator.multiply(2,3)).to eq 6
   end
 
+<<<<<<< HEAD
   it "divides two integers" do
     expect(calculator.divide(6,2)).to eq 3
   end
+=======
+  it "divideds two integers" do
+    expect(calculator.divide(6,2)).to eq 3
+  end
+  
+>>>>>>> 307187a999b6afafd4b2833d0ba3194821f7152a
 end
