@@ -50,6 +50,10 @@ attr_accessor :letters, :guess_count
           end
     end
 
+    def turns_guessing
+      number_of_guesses = retrieve_word.length
+      @guess_count = number_of_guesses
+    end
 end
 
 
@@ -64,3 +68,4 @@ p word_game.get_word
 p word_game.retrieve_word
 p word_game.underscore
 p word_game.guess_letter
+p word_game.turns_guessing
