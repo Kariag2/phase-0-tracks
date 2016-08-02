@@ -29,16 +29,6 @@ attr_accessor :letters, :guess_count
   # Input: User guesses a letter in the word
   # Output: If the letter is in the word it replaces the representing underscore
            # Else it uses up one guess
-  # def guess_letter
-  #   puts "Guess a letter in the word...."
-  #   @letters = gets.chomp.downcase
-  #     if retrieve_word.include?(@letters)
-  #     @underscore_array.delete_at(retrieve_word.index(@letters))
-  #     @underscore_array.insert(retrieve_word.index(@letters), @letters)
-  #     else
-  #     "That is not a letter in the word, please guess another letter..."
-  #     end
-  #   end
     def guess_letter
       puts "Guess a letter in the word...."
       @letters = gets.chomp.downcase
