@@ -23,7 +23,7 @@ attr_accessor :letters
   def underscore
     retrieve_word = @word.length
     underscores = '_' * retrieve_word
-    underscore_array = underscores.chars
+    @underscore_array = underscores.chars
   end
   # Input: User guesses a letter in the word
   # Output: If the letter is in the word it replaces the representing underscore
@@ -32,12 +32,17 @@ attr_accessor :letters
     puts "Guess a letter in the word...."
     @letters = gets.chomp.downcase
     if @letter_split.include?(@letters)
-      'right'
+      @underscore_array.delete_at(@letter_split.index(@letters))
+      @underscore_array.insert(@letter_split.index(@letters), @letters)
     else
-      'wrong'
+      "Please guess again"
     end
+
   end
-  #
+
+  # def return_index
+  #   @letter_split.index(@letter)
+  # end
   #   puts "Guess a letter...."
   #   @letters = gets.chomp.downcase
   # end
@@ -51,10 +56,9 @@ p word_game.retrieve_word
 p word_game.underscore
 p word_game.guess_letter
 
-# while !word_game.is_over
-#   puts "Guess a letter......"
-#   letter_guess = gets.chomp
-# end
+
+
+end
 
 # def get_word
 #   puts "What word would you like to use in this guessing game?"
