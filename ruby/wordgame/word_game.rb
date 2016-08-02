@@ -16,11 +16,7 @@ attr_accessor :letters
   # Input: Word given by user
   # Output: Word split into letters and put into an array
   def retrieve_word
-    letter_split = @word.chars
-    # letter_split.each do |letter|
-    #   if @letters = letter
-    #
-
+    @letter_split = @word.chars
   end
   # Input: Based on the word given get the word length
   # Output: Use the word length to return that many underscores in an array
@@ -35,6 +31,11 @@ attr_accessor :letters
   def guess_letter
     puts "Guess a letter in the word...."
     @letters = gets.chomp.downcase
+    if @letter_split.include?(@letters)
+      'right'
+    else
+      'wrong'
+    end
   end
   #
   #   puts "Guess a letter...."
