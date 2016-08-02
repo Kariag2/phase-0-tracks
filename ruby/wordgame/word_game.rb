@@ -8,8 +8,10 @@ attr_accessor :letters
     @letters = letters
   end
 
+
   def get_word
-    @array
+    puts "What word would you like to use?"
+    word_used = gets.chomp.downcase
   end
 
   def retrieve_word(i)
@@ -22,14 +24,14 @@ attr_accessor :letters
     how_many_underscores = @array[i].length
     underscores = '_' * how_many_underscores
   end
-
+  # Input: User guesses a letter in the word
+  # Output: If the letter is in the word it replaces the representing underscore
+          # Else it uses up one guess
   def guess_letter
     puts "Guess a letter in the word...."
     @letters = gets.chomp.downcase
   end
-  # Input: User guesses a letter in the word
-  # Output: If the letter is in the word it replaces the representing underscore
-          # Else it uses up one guess
+
   #
   #   puts "Guess a letter...."
   #   @letters = gets.chomp.downcase
@@ -39,7 +41,7 @@ attr_accessor :letters
 
 puts "Welcome to the Word Guessing Game!"
 word_game = WordGame.new("unicorns", "c")
-
+puts word_game.guess_letter
 
 # while !word_game.is_over
 #   puts "Guess a letter......"
