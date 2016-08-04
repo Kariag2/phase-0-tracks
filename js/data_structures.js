@@ -38,3 +38,18 @@ for (var i = 0; i < colorArray.length; i++) {
   horse[nameArray[i]] = colorArray[i];
 }
   console.log(horse)
+
+  // write a constructor function for a car
+  // Give it a few different properties of various data types,
+  // Include at least one function.
+  // Demonstrate that your function works by creating a few cars with it.
+
+  function Car(make, model, color) {
+  console.log("Our new car:", this);
+
+  this.make = make;
+  this.model = model;
+  this.color = color;
+
+  this.beep = function() { console.log("beep beep"); };
+}
