@@ -97,3 +97,24 @@ alaska.virus_effects
 
 #=======================================================================
 # Reflection Section
+=begin
+ What are the differences between the two different hash syntaxes shown in the state_data file?
+- The different hash syntaxes used are the hashrocket and the symbol.
+  You must use the rocket for symbols that require quoting.
+
+ What does require_relative do? How is it different from require?
+- Require_relative links the state data file because it is in the same directory.
+  It compliments the built in method require. It is a shortcut to require in pulling in files
+  Require can pull in ruby modules that require_relative cannot.
+
+ What are some ways to iterate through a hash?
+- You can iterate through a hash with .each or .map
+
+ When refactoring virus_effects, what stood out to you about the variables, if anything?
+ - What stood out to me about the variables in virus_effects were that they were
+   instance variable, so they are available throughout the entire class.
+
+ What concept did you most solidify in this challenge?
+ - I think that iterating through hashes was most solidified. Also that instance
+   variables are available throughout the class and to not be repetitive in your code.
+ =end
