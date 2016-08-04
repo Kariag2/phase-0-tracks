@@ -7,10 +7,30 @@
 //being able to think through a problem logically.
 
 
-// Write a function that takes a word and reverses the word
+// Write a function that takes a word as a parameter
+// Use split method on a string to split it into an array
+// So you can call the reverse method on the array
+// Then join them back together with the join method
 
-function wordReverse(){
-  return word.reverse;
+// function reverse(word){
+//     return word.split("").reverse().join("");
+// }
+
+// var reversedString = reverse("hello")
+// console.log(reversedString)
+//
+// var reversedString2 = reverse("KariAnne")
+// console.log(reversedString2)
+//
+// var reversedString3 = reverse("Hello World")
+// console.log(reversedString3)
+
+function reverse(s) {
+  var word = '';
+  for (var i = s.length - 1; i >= 0; i--)
+    word += s[i];
+  return word;
 }
 
-console.log(wordReverse("Hello"));
+var reversedWord = reverse("hello")
+console.log(reversedWord)
