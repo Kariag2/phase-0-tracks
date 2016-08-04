@@ -28,6 +28,10 @@ console.log(reversedString3)
 var reversedString4 = reverse("Does this function work for longer phrases?")
 console.log(reversedString4)
 
+// EXPLORING DIFFERENT WAYS TO REVERSE STRINGS
+
+//Write a function that takes a word as a parameter
+
 function reverse(s) {
   var word = '';
   for (var i = s.length - 1; i >= 0; i--)
