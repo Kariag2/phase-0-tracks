@@ -8,6 +8,11 @@ var nameArray = ["Timmys Prize", "American Pharo", "Justice or Salt", "Just Ed"]
 
 # Add another color to the colors array
 # and another horse name to the horses array.
+console.log(colorArray);
+console.log(nameArray);
 
 colorArray.push("Yellow");
 nameArray.push("Big Steve");
+
+console.log(colorArray);
+console.log(nameArray);
