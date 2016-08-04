@@ -57,3 +57,12 @@ for (var i = 0; i < colorArray.length; i++) {
 var car1 = new Car("Toyota", "Highlander", "Blue");
 var car2 = new Car("Honda", "CRV", "Silver");
 var car3 = new Car("Ford", "Focus", "Red");
+
+
+console.log(car1);
+console.log("----");
+console.log(car2);
+car2.beep();
+console.log("----");
+console.log(car3);
+console.log("----");
