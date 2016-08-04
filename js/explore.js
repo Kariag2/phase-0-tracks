@@ -46,3 +46,6 @@ function reverse(string) {
 
 var reversedWord = reverse("hello")
 console.log(reversedWord)
+
+var reversedWord2 = reverse("Does this work for longer phrases?")
+console.log(reversedWord2)
