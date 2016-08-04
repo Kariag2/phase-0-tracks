@@ -12,30 +12,31 @@
 // So you can call the reverse method on the array
 // Then join them back together with the join method
 
-function reverse(word){
-    return word.split("").reverse().join("");
-}
-
-var reversedString = reverse("hello")
-console.log(reversedString)
-
-var reversedString2 = reverse("KariAnne")
-console.log(reversedString2)
-
-var reversedString3 = reverse("Hello World")
-console.log(reversedString3)
-
-var reversedString4 = reverse("Does this function work for longer phrases?")
-console.log(reversedString4)
+// function reverse(word){
+//     return word.split("").reverse().join("");
+// }
+//
+// var reversedString = reverse("hello")
+// console.log(reversedString)
+//
+// var reversedString2 = reverse("KariAnne")
+// console.log(reversedString2)
+//
+// var reversedString3 = reverse("Hello World")
+// console.log(reversedString3)
+//
+// var reversedString4 = reverse("Does this function work for longer phrases?")
+// console.log(reversedString4)
 
 // EXPLORING DIFFERENT WAYS TO REVERSE STRINGS
 
 //Write a function that takes a word as a parameter
+//
 
-function reverse(s) {
+function reverse(string) {
   var word = '';
-  for (var i = s.length - 1; i >= 0; i--)
-    word += s[i];
+  for (var i = string.length - 1; i >= 0; i--)
+    word += string[i];
   return word;
 }
 
