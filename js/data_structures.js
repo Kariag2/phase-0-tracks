@@ -24,3 +24,17 @@ console.log(nameArray);
 // as long as the two arrays are the same length
 
 // Create a container that will have horses names as keys and colors as values
+var horse = {}
+
+horse.name = "James the hat"
+horse.color = "Green"
+
+console.log(horse)
+// Create a loop that will take the horses name out of the array and add it to
+// the hash as the key and take the colors out of their array and add them to
+// the hash as values
+
+for (var i = 0; i < colorArray.length; i++) {
+  horse[nameArray[i]] = colorArray[i];
+}
+  console.log(horse)
