@@ -21,6 +21,7 @@ function returnPhrase(array){
     return longestPhrase;
   }
 
+//DRIVER CODE
 var phraseArray = ["A phrase", "A longer phrase", "The longest phrase expected as return"];
 var phrase1 = returnPhrase(phraseArray);
 console.log(phrase1)
@@ -28,3 +29,15 @@ console.log(phrase1)
 var anotherArray = ["My name is Kari", "I like to code", "Which phrase will be returned"];
 var phrase2 = returnPhrase(anotherArray)
 console.log(phrase2)
+
+// write a function that takes two objects and checks to see if the objects share
+// at least one key-value pair
+
+// Create a container that takes two objects that have a key and value
+// Add keys and values to the container
+
+var object = {}
+object.name = "Kari"
+object.age = "36"
+
+console.log(object)
