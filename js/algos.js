@@ -24,3 +24,7 @@ function returnPhrase(array){
 var phraseArray = ["A phrase", "A longer phrase", "The longest phrase expected as return"];
 var phrase1 = returnPhrase(phraseArray);
 console.log(phrase1)
+
+var anotherArray = ["My name is Kari", "I like to code", "Which phrase will be returned"];
+var phrase2 = returnPhrase(anotherArray)
+console.log(phrase2)
