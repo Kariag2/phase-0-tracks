@@ -8,17 +8,19 @@
 // Loop through the array to find the index of the phrase that has the longest length
 
 
-var phraseArray = ["A phrase", "A longer phrase", "The longest phrase expected as return"];
 
-console.log(phraseArray);
 
-function returnPhrase(phraseArray){
-    longestPhrase = 0
-    for (var i = 0; i < phraseArray.length; i++){
-      if (phraseArray[i].length > longestPhrase[i].length){
-        longestPhrase = phraseArray[i];
+function returnPhrase(array){
+    var longest = 0;
+    var longestPhrase = ' ';
+    for (var i = 0; i < array.length; i++){
+      if (array[i].length > longest){
+        longestPhrase = array[i];
       }
     }
     return longestPhrase;
   }
-  
+
+var phraseArray = ["A phrase", "A longer phrase", "The longest phrase expected as return"];
+var phrase1 = returnPhrase(phraseArray);
+console.log(phrase1)
