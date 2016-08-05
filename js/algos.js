@@ -13,11 +13,12 @@ var phraseArray = ["A phrase", "A longer phrase", "The longest phrase expected a
 console.log(phraseArray);
 
 function returnPhrase(phraseArray){
-    var longestPhrase = 0;
+    longestPhrase = 0
     for (var i = 0; i < phraseArray.length; i++){
-      if (phraseArray[i].length > longestPhrase.length){
+      if (phraseArray[i].length > longestPhrase[i].length){
         longestPhrase = phraseArray[i];
       }
     }
     return longestPhrase;
   }
+  
