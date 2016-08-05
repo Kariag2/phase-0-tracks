@@ -44,9 +44,13 @@ object.age = "36"
 var object2 = {}
 object2.name = "Cuffey"
 object2.age = "36"
+
+var object3 = {}
+object3.name = "David"
+object3.age = "71"
 // Print just for testing
-console.log(object)
-console.log(object2)
+// console.log(object)
+// console.log(object2)
 // Create a function that takes the two objects
 // Loop through the objects keys to compare their values
 
@@ -58,3 +62,6 @@ function compare(object, object2){
   }
   return false;
 }
+
+console.log(compare(object, object2))
+console.log(compare(object, object3))
