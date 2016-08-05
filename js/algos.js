@@ -33,7 +33,8 @@ console.log(phrase2)
 // write a function that takes two objects and checks to see if the objects share
 // at least one key-value pair
 
-// Create a container that takes two objects that have a key and value
+// Create a container that takes an object that has a name as a key value pair
+// And an age as a key value pair
 // Add keys and values to the container
 
 var object = {}
@@ -43,6 +44,17 @@ object.age = "36"
 var object2 = {}
 object2.name = "Cuffey"
 object2.age = "36"
-
+// Print just for testing
 console.log(object)
 console.log(object2)
+// Create a function that takes the two objects
+// Loop through the objects keys to compare their values
+
+function compare(object, object2){
+  for (var key in object){
+    if(object2[key] === object[key]){
+      return true;
+    }
+  }
+  return false;
+}
