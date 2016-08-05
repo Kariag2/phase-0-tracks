@@ -40,4 +40,9 @@ var object = {}
 object.name = "Kari"
 object.age = "36"
 
+var object2 = {}
+object2.name = "Cuffey"
+object2.age = "36"
+
 console.log(object)
+console.log(object2)
