@@ -10,25 +10,25 @@
 
 
 
-// function returnPhrase(array){
-//     var longest = 0;
-//     var longestPhrase = ' ';
-//     for (var i = 0; i < array.length; i++){
-//       if (array[i].length > longest){
-//         longestPhrase = array[i];
-//       }
-//     }
-//     return longestPhrase;
-//   }
-//
+function returnPhrase(array){
+    var longest = 0;
+    var longestPhrase = ' ';
+    for (var i = 0; i < array.length; i++){
+      if (array[i].length > longest){
+        longestPhrase = array[i];
+      }
+    }
+    return longestPhrase;
+  }
+
 // //DRIVER CODE
-// var phraseArray = ["A phrase", "A longer phrase", "The longest phrase expected as return"];
-// var phrase1 = returnPhrase(phraseArray);
-// console.log(phrase1)
-//
-// var anotherArray = ["My name is Kari", "I like to code", "Which phrase will be returned"];
-// var phrase2 = returnPhrase(anotherArray)
-// console.log(phrase2)
+var phraseArray = ["A phrase", "A longer phrase", "The longest phrase expected as return"];
+var phrase1 = returnPhrase(phraseArray);
+console.log(phrase1)
+
+var anotherArray = ["My name is Kari", "I like to code", "Which phrase will be returned"];
+var phrase2 = returnPhrase(anotherArray)
+console.log(phrase2)
 
 // write a function that takes two objects and checks to see if the objects share
 // at least one key-value pair
@@ -37,34 +37,34 @@
 // And an age as a key value pair
 // Add keys and values to the container
 
-// var object = {}
-// object.name = "Kari"
-// object.age = "36"
-//
-// var object2 = {}
-// object2.name = "Cuffey"
-// object2.age = "36"
-//
-// var object3 = {}
-// object3.name = "David"
-// object3.age = "71"
-// // Print just for testing
-// // console.log(object)
-// // console.log(object2)
-// // Create a function that takes the two objects
-// // Loop through the objects keys to compare their values
-//
-// function compare(object, object2){
-//   for (var key in object){
-//     if(object2[key] == object[key]){
-//       return true;
-//     }
-//   }
-//   return false;
-// }
+var object = {}
+object.name = "Kari"
+object.age = "36"
+
+var object2 = {}
+object2.name = "Cuffey"
+object2.age = "36"
+
+var object3 = {}
+object3.name = "David"
+object3.age = "71"
+// Print just for testing
+// console.log(object)
+// console.log(object2)
+// Create a function that takes the two objects
+// Loop through the objects keys to compare their values
+
+function compare(object, object2){
+  for (var key in object){
+    if(object2[key] == object[key]){
+      return true;
+    }
+  }
+  return false;
+}
 // // DRIVER CODE
-// console.log(compare(object, object2))
-// console.log(compare(object, object3))
+console.log(compare(object, object2))
+console.log(compare(object, object3))
 
 // Write a function that takes an integer for length, and builds and returns
 // an array of strings of the given length
@@ -103,4 +103,5 @@ function wordContainer(counter, counter2)
 	return array;
 }
 
+//DRIVER CODE
 console.log(wordContainer(3, (Math.floor(Math.random() * 10) + 1)))
