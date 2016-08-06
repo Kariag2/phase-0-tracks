@@ -56,7 +56,7 @@ object3.age = "71"
 
 function compare(object, object2){
   for (var key in object){
-    if(object2[key] === object[key]){
+    if(object2[key] == object[key]){
       return true;
     }
   }
@@ -80,7 +80,12 @@ console.log(compare(object, object3))
 
 // Write a function that takes an integer for length and returns an array of strings
 // of the given length
+// Create a word array variable equal to an empty array
 
-function wordContainer(integer){
-  
-}
+
+// function wordContainer(integer){
+//   var wordArray[];
+//   for(var i = 0; i < array.length; i++){
+//
+//   }
+// }
